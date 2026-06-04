@@ -1,0 +1,15 @@
+Data Privacy in Large Language Models
+=====================================
+
+
+## 1. Data Collection and Consent Policies
+------------------------------------------
+Large Language Models (LLMs) require massive datasets for pre-training and fine-tuning. When these datasets contain personal data, organizations face serious compliance risks under frameworks like GDPR and CCPA. Organizations must establish clear data collection and consent policies. Users must be informed if their prompts, chats, or document uploads are used to train future model iterations. Under standard privacy guidelines, users must have the right to opt-out of training pipelines without losing access to the core AI utility.
+
+## 2. PII Filtering and Data Scrubbing
+--------------------------------------
+To prevent LLMs from memorizing and subsequently leaking sensitive user data, developers must implement robust pre-processing filters. Personally Identifiable Information (PII)—including social security numbers, credit card details, phone numbers, home addresses, and private email addresses—must be scrubbed from text corpora before embedding or fine-tuning occurs. Standard scrubbing techniques include regular expression matching, named entity recognition (NER) using spaCy or HuggingFace tokenizers, and hashing algorithms that mask PII with generic placeholders (e.g., replacing a name with [REDACTED_NAME]).
+
+## 3. Model Inference Security and fine-tuning leakage
+------------------------------------------------------
+Even with data scrubbing, LLMs can accidentally leak confidential info through semantic associations. To mitigate this risk during fine-tuning, teams can employ Differential Privacy (DP), which adds mathematical noise to gradient updates, ensuring the model does not overfit on any single user's unique text structure. During inference, prompt filters must check both input questions and model outputs. Output filters act as a final guardrail, scanning generated answers for potential leakages of database keys, internal IP addresses, or PII before sending the response to the user's browser interface.

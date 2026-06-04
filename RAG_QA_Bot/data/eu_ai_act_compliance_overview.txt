@@ -1,0 +1,25 @@
+EU AI Act Compliance Overview
+=============================
+
+
+## 1. Risk-Based Categorization of AI Systems
+---------------------------------------------
+The European Union Artificial Intelligence Act (EU AI Act) is the world's first comprehensive legal framework regulating artificial intelligence. The law enforces a strict risk-based categorization system, applying different obligations depending on the potential harm an AI system can cause:
+- Category 1.1: Unacceptable Risk. Systems in this class are strictly banned. Examples include cognitive behavioral manipulation (e.g., voice-activated toys encouraging dangerous behavior), untargeted scraping of facial images from the internet, and social scoring systems by governments.
+- Category 1.2: High Risk. These systems are highly regulated. They include AI used in critical infrastructure, medical devices, educational grading, employee recruitment, credit scoring, and law enforcement. High-risk systems must undergo conformant assessments before deployment.
+- Category 1.3: Limited Risk / Transparency obligations. Systems like chatbots, deepfakes, or AI-generated text must be clearly labeled so that users are aware they are interacting with AI.
+- Category 1.4: Minimal Risk. This includes applications like spam filters, AI in video games, or search engines. These systems face no additional legal obligations under the Act.
+
+## 2. Legal Requirements for High-Risk AI Systems
+-------------------------------------------------
+Organizations deploying High-Risk AI systems must comply with six core technical and administrative requirements:
+- 1. Risk Management: Establish a continuous risk management system to identify and mitigate known risks throughout the model's operational lifecycle.
+- 2. Data Governance: Ensure training, validation, and testing datasets are high quality, free of systematic errors, and representative of the deployment population.
+- 3. Technical Documentation: Maintain detailed documentation of the system's design, architecture, datasets, and training algorithms to demonstrate compliance to regulatory authorities.
+- 4. Automatic Logging: Embed automated logging capabilities to track execution logs, system outputs, and user interactions, allowing trace audits during failures.
+- 5. Human Oversight: Design the system to enable meaningful oversight by human supervisors, including override buttons, output verification steps, and emergency kill switches.
+- 6. Cybersecurity: Implement high levels of cybersecurity robustness to protect the system against data poisoning, model inversion, and adversarial evasion attacks.
+
+## 3. Enforcement Timelines and Non-Compliance Penalties
+--------------------------------------------------------
+The EU AI Act enters into force in phases. Banned systems must be phased out within 6 months of enactment. Obligations for General Purpose AI (GPAI) models apply after 12 months, and full compliance rules for high-risk systems become legally binding after 24 to 36 months. Failure to comply carry severe financial penalties: up to 35 million Euros or 7% of an organization's global annual turnover (whichever is higher) for using banned AI systems, and up to 15 million Euros or 3% of turnover for violating standard compliance requirements.
