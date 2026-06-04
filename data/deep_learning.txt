@@ -1,9 +1,0 @@
-Deep Learning is a subset of machine learning that uses artificial neural networks with multiple layers.
-
-Deep learning models automatically learn hierarchical representations from data.
-
-Applications include image recognition, speech recognition, natural language processing, and autonomous driving.
-
-Popular deep learning frameworks include TensorFlow and PyTorch.
-
-Neural networks consist of input layers, hidden layers, and output layers.

@@ -1,9 +1,0 @@
-Artificial Intelligence is a branch of computer science focused on building intelligent systems capable of performing tasks that normally require human intelligence.
-
-AI systems use machine learning, deep learning, natural language processing, and computer vision to solve complex problems.
-
-Modern AI applications include healthcare diagnosis, autonomous vehicles, recommendation systems, fraud detection, and robotics.
-
-Retrieval-Augmented Generation (RAG) combines information retrieval with large language models. RAG retrieves relevant documents and provides grounded responses.
-
-AI models require large datasets and computational resources for training and inference.
